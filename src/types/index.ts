@@ -1,14 +1,17 @@
 export type StringType = string;
 
-export type FeatureInfoType = {
+export type HeroInfoType = {
     id: number;
-    listNumber: string;
-    title: string;
-    desc: string;
+    heroTitle: string;
+    heroDescription: string;
+    heroButton: string;
 }
 
-export type FooterIconsType = {
+export type FeatureInfoType = {
     id: number;
-    icon: string;
-    alt: string;
+    featureCourse?: string;
+    featureIcon?: string;
+    featureTitle?: string;
+    featureDescription?: string;
+    featureButton?: string;
 }

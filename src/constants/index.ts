@@ -1,55 +1,59 @@
-import { facebookIcon, instagramIcon, twitterIcon } from "../assets";
-import { FeatureInfoType, FooterIconsType, StringType } from "../types";
+import { animationIcon, businessIcon, cryptoIcon, designIcon, photographyIcon } from "../assets";
+import { FeatureInfoType, HeroInfoType, StringType } from "../types";
 
-const headerAccess: StringType = "Apply for access";
-const heroButton: StringType = "Learn more";
+const getStartedButton: StringType = "Get Started";
+const heroinfo: HeroInfoType[] = [
+    {
+        id: 1,
+        heroTitle: "Maximize skill, minimize budget",
+        heroDescription: "Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.",
+        heroButton: getStartedButton
+    }
+];
 const featureInfo: FeatureInfoType[] = [
     {
         id: 1, 
-        listNumber: "1",
-        title: "Actionable insights",
-        desc: "Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics."
+        featureCourse: "Check out our most popular courses!",
     },
     {
         id: 2, 
-        listNumber: "2",
-        title: "Data-driven decisions",
-        desc: "Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data."
+        featureIcon: animationIcon,
+        featureTitle: "Animation",
+        featureDescription: "Learn the latest animation techniques to create stunning motion design and captivate your audience.",
+        featureButton: getStartedButton
     },
     {
         id: 3, 
-        listNumber: "3",
-        title: "Always affordable",
-        desc: "Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees."
+        featureIcon: designIcon,
+        featureTitle: "Design",
+        featureDescription: "Create beautiful, usable interfaces to help shape the future of how the web looks.",
+        featureButton: getStartedButton
+    },
+    {
+        id: 4, 
+        featureIcon: photographyIcon,
+        featureTitle: "Photography",
+        featureDescription: "Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.",
+        featureButton: getStartedButton
+    },
+    {
+        id: 5, 
+        featureIcon: cryptoIcon,
+        featureTitle: "Crypto",
+        featureDescription: "All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.",
+        featureButton: getStartedButton
+    },
+    {
+        id: 6, 
+        featureIcon: businessIcon,
+        featureTitle: "Business",
+        featureDescription: "A step-by-step playbook to help you start, scale, and sustain your business without outside investment.",
+        featureButton: getStartedButton
     }
 ];
-const testimonialTitle: StringType = "Be the first to test";
-const testimonialdesc: StringType = "Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I'll be in touch to schedule a call.";
-const testimonialButton: StringType = "Apply for access";
-const footerIcons: FooterIconsType[] = [
-    {
-        id: 1,
-        icon: facebookIcon,
-        alt: "Facebook Logo"
-    },
-    {
-        id: 2,
-        icon: twitterIcon,
-        alt: "Twitter Logo"
-    },
-    {
-        id: 3,
-        icon: instagramIcon,
-        alt: "Instagram Logo"
-    }
-]
 
 export {
-    testimonialTitle,
-    featureInfo,
-    headerAccess,
-    heroButton,
-    testimonialButton,
-    testimonialdesc,
-    footerIcons
+    getStartedButton,
+    heroinfo,
+    featureInfo
 }

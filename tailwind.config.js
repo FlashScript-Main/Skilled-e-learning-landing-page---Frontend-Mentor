@@ -11,13 +11,14 @@ export default {
       },
       colors: {
         // Primary
-          'primary-dark-purple': 'hsl(273, 85%, 13%)',
-          'primary-eucaplyptus': 'hsl(150, 100%, 63%)',
-          'primary-davys-grey': 'hsl(271, 12%, 34%)',
-          'primary-ghost-white': 'hsl(276, 100%, 99%)',
+          'primary-dark-blue-gray': '#666ca3',
+          'primary-yankees-blue': '#13183f',
+          'primary-silver': '#83869a',
+          'primary-pink': '#f74780',
+          'primary-carnation-pink': '#ffa7c3',
 
         // Neutral
-          'neutral-white': 'hsl(0, 0%, 100%)',
+          'neutral-white': '#ffffff',
       },
       screens: {
         // @media (min-width: ...) {}

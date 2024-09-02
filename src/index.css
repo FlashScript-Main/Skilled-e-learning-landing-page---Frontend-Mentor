@@ -2,35 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero {
-    clip-path: ellipse(140% 85% at 50% 0);
+.gradient-magenta-orange {
+    background-image: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
 }
-
-@media (min-width: 768px) {
-    .hero {
-        clip-path: ellipse(100% 85% at 50% 0);
-    }
+.gradient-magenta-blue {
+    background-image: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 }
-@media (min-width: 1024px) {
-    .hero {
-        clip-path: ellipse(100% 85% at 50% 0);
-    }
-}
-
-.features {
-    clip-path: ellipse(200% 85% at 50% 0);
-}
-
-@media (min-width: 768px) {
-    .features {
-        clip-path: ellipse(150% 85% at 50% 0);
-    }
-}
-
-@media (min-width: 1024px) {
-    .features {
-        clip-path: ellipse(100% 85% at 50% 0);
-    }
+.gradient-hover {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
 }
 
 /* ---------------------------------------------------------------- */
