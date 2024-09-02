@@ -4,7 +4,7 @@ type GetStartedButtonPropType = {
     bgColor: string;
     px: string;
     py: string;
-    onHover: string;
+    onHover?: string;
 }
 
 const GetStartedButton = ({ bgColor, px, py, onHover }: GetStartedButtonPropType) => (

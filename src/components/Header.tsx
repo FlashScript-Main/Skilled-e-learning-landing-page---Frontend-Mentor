@@ -5,12 +5,12 @@ const Header = () => {
 
     return (
         <header className={`w-full py-6 |  |  | `}>
-            <div className={`w-[90%] lg:max-w-[65rem] mx-auto |  | flex justify-between items-center | `}>
+            <div className={`main-container |  | flex justify-between items-center | `}>
                 <a href="#">
                     <img 
                         src={logoDark} 
                         alt="Skilled Logo" 
-                        className={`w-24 |  |  | `}
+                        className={`w-24 md:w-28 |  |  | `}
                     />
                 </a>
 
