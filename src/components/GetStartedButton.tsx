@@ -9,7 +9,7 @@ type GetStartedButtonPropType = {
 
 const GetStartedButton = ({ bgColor, px, py, onHover }: GetStartedButtonPropType) => (
 
-    <button className={`${px} ${py} | text-neutral-white text-base font-semibold ${bgColor} ${onHover} | rounded-full | transition-colors`}>
+    <button className={`${px} ${py} z-10 | text-neutral-white text-base font-semibold ${bgColor} ${onHover} | rounded-full | transition-colors`}>
         {getStartedButton}
     </button>
 

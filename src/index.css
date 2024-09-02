@@ -6,6 +6,13 @@
     .main-container {
         @apply w-[90%] lg:max-w-[65rem] mx-auto;
     }
+
+    /* .tablet-image {
+        background-image: url("/src/assets/image-hero-tablet.png");
+        background-repeat: no-repeat;
+        background-position: 310% 40%;
+        background-size: 40rem;
+    } */
 }
 
 .gradient-magenta-orange {
