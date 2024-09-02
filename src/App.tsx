@@ -3,7 +3,7 @@ import { Features, FlashScript, Footer, Header, Hero } from "./components"
 const App = () => {
 
     return (
-        <div className="w-full">
+        <div className="w-full font-jakarta">
             <Header />
 
             <Hero />
@@ -11,7 +11,7 @@ const App = () => {
             <Features />
             
             <Footer />
-            
+
             <FlashScript />
         </div>
     )
