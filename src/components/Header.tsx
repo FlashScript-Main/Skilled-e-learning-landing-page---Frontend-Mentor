@@ -1,4 +1,4 @@
-import { heroTabletImage, logoDark } from "../assets"
+import { heroDesktopImage, heroTabletImage, logoDark } from "../assets"
 import GetStartedButton from "./GetStartedButton"
 
 const Header = () => {
@@ -24,7 +24,13 @@ const Header = () => {
                 <img 
                     src={heroTabletImage} 
                     alt="" 
-                    className={`w-[40rem] max-md:hidden md:block absolute top-[-6.8rem] right-[-19.5rem] |  |  | `}
+                    className={`w-[40rem] max-md:hidden md:block lg:hidden absolute top-[-6.8rem] right-[-19.5rem] |  |  | `}
+                />     
+
+                <img 
+                    src={heroDesktopImage} 
+                    alt="" 
+                    className={`w-[50rem] max-lg:hidden lg:block absolute top-[-6rem] right-[-23rem] |  |  | `}
                 />             
             </div>
         </header>
