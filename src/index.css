@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    }
+}
+
 @layer components {
     .main-container {
         @apply w-[90%] lg:max-w-[65rem] mx-auto;
     }
-
-    /* .tablet-image {
-        background-image: url("/src/assets/image-hero-tablet.png");
-        background-repeat: no-repeat;
-        background-position: 310% 40%;
-        background-size: 40rem;
-    } */
 }
 
 .gradient-magenta-orange {
@@ -21,6 +20,10 @@
 .gradient-magenta-orange:hover {
     background: linear-gradient(0deg,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),
     linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+}
+
+.gradient-magenta-orange-2 {
+    background-image: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
 }
 
 .gradient-magenta-blue {

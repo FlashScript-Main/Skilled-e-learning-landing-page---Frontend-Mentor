@@ -15,6 +15,7 @@ const Header = () => {
                 </a>
 
                 <GetStartedButton 
+                    textColor="text-neutral-white font-semibold"
                     bgColor="bg-primary-yankees-blue"
                     px="px-6"
                     py="py-3"

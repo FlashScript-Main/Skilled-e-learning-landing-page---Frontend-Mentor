@@ -15,6 +15,7 @@ const Footer = () => {
                 </a>
 
                 <GetStartedButton 
+                    textColor="text-neutral-white font-semibold"
                     bgColor="gradient-magenta-blue"
                     px="px-6"
                     py="py-3"

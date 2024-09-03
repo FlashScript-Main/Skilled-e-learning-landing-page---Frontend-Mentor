@@ -9,9 +9,8 @@ export type HeroInfoType = {
 
 export type FeatureInfoType = {
     id: number;
-    featureCourse?: string;
-    featureIcon?: string;
-    featureTitle?: string;
-    featureDescription?: string;
-    featureButton?: string;
+    featureIcon: string;
+    featureTitle: string;
+    featureDescription: string;
+    featureButton: string;
 }

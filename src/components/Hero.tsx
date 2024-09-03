@@ -5,7 +5,7 @@ import GetStartedButton from "./GetStartedButton"
 const Hero = () => {
 
     return (
-        <main className={`main-container py-6 md:mt-10 lg:mt-14 relative |  | max-md:flex max-md:flex-col max-md:justify-start max-md:items-center max-md:gap-6 | `}>
+        <main className={`main-container pt-6 max-md:-mb-4 md:mt-10 lg:mt-14 relative |  | max-md:flex max-md:flex-col max-md:justify-start max-md:items-center max-md:gap-6 | `}>
             {
                 heroinfo.map((h) => (
                     <div 
@@ -20,6 +20,7 @@ const Hero = () => {
                         </p>
 
                         <GetStartedButton 
+                            textColor="text-neutral-white font-semibold"
                             bgColor="gradient-magenta-orange"
                             px="px-10"
                             py="py-4"
