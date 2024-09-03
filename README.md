@@ -1,4 +1,4 @@
-❤️🔥🔗[Live Website](https://flashscript-workitlandingpage.netlify.app/)🔗🔥❤️
+❤️🔥🔗[Live Website](https://flashscript-skilledelearning.netlify.app)🔗🔥❤️
 
 # Frontend Mentor 🧭- Skilled e-learning landing page
 ![Design preview for the Blog preview card coding challenge](./src/assets/screenshots/desktop-preview.jpg)
