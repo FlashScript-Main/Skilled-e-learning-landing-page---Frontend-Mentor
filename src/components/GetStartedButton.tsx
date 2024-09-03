@@ -6,11 +6,12 @@ type GetStartedButtonPropType = {
     px: string;
     py: string;
     onHover?: string;
+    animation?: string;
 }
 
-const GetStartedButton = ({ textColor, bgColor, px, py, onHover }: GetStartedButtonPropType) => (
+const GetStartedButton = ({ textColor, bgColor, px, py, onHover, animation }: GetStartedButtonPropType) => (
 
-    <button className={`${px} ${py} z-10 | ${textColor} text-base ${bgColor} ${onHover} | rounded-full | transition-colors`}>
+    <button className={`${px} ${py} z-10 | ${textColor} text-base ${bgColor} ${onHover} | rounded-full | transition-colors ${animation}`}>
         {getStartedButton}
     </button>
 

@@ -1,11 +1,25 @@
 import { featureCourse, featureInfo } from "../constants"
 import GetStartedButton from "./GetStartedButton"
+import { useInView } from 'react-intersection-observer';
 
 const Features = () => {
 
+    const { 
+        ref: featuresRef, 
+        inView: featuresVisiable 
+    } = useInView(
+        { 
+            triggerOnce: true, 
+            threshold: 0.2 
+        }
+    )
+
     return (
-        <section className={`lg:px-6 mx-auto max-w-[94%] md:max-w-[44.5rem] lg:max-w-[65rem] mb-[4.5rem] md:mt-[11.5rem] lg:mt-[15rem] lg:mb-[6rem] |  | grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-2 md:gap-y-14 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-[4.5rem] | `}>
-            <div className={`pb-8 pt-6 md:pt-14 px-8 | gradient-magenta-orange-2 |  | rounded-xl`}>
+        <section 
+            className={`lg:px-6 mx-auto max-w-[94%] md:max-w-[44.5rem] lg:max-w-[65rem] mb-[4.5rem] md:mt-[11.5rem] lg:mt-[15rem] lg:mb-[6rem] |  | grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-2 md:gap-y-14 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-[4.5rem] | `}
+            ref={featuresRef}
+        >
+            <div className={`pb-8 pt-6 md:pt-14 px-8 | gradient-magenta-orange-2 |  | rounded-xl ${featuresVisiable ? "fade-in-bottom fade-in-bottom-0 md:visible" : "md:invisible"}`}>
                 <h2 className={` | text-2xl lg:text-[1.7rem] lg:leading-[2.2rem] text-neutral-white font-bold  |  | `}>
                     {featureCourse}
                 </h2>
@@ -15,7 +29,7 @@ const Features = () => {
                 featureInfo.map((f) => (
                     <div 
                         key={f.id}
-                        className={`h-[14.8rem] lg:h-[17rem] px-6 md:px-8 lg:pr-6 relative | bg-neutral-white |  | rounded-xl shadow-lg shadow-primary-dark-blue-gray/10`}
+                        className={`h-[14.8rem] lg:h-[17rem] px-6 md:px-8 lg:pr-6 relative | bg-neutral-white |  | rounded-xl shadow-lg shadow-primary-dark-blue-gray/10 ${featuresVisiable ? `fade-in-bottom fade-in-bottom-${f.id} md:visible` : "md:invisible"}`}
                     >
                         <img 
                             src={f.featureIcon} 
